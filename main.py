@@ -35,6 +35,20 @@ class SortingClass:
                 j-=1
             arr[j+1] = key
         print(f"Insertion Sort: {arr}")
+        
+    def selectionSort(self):
+        # Selection sort is like arranging books on a shelf by repeatedly finding the thinnest book left.
+        # You scan the remaining pile without moving anything.
+        # Once the smallest book is identified, you place it in the next empty spot on the shelf.
+        # The sorted section grows, and the search space shrinks, one book at a time.
+        arr = self.Narr
+        for i in range(len(arr)-1):
+            min_index = i
+            for j in range(i+1,len(arr)):
+                if arr[min_index] >arr[j]:
+                    min_index = j
+            arr[i], arr[min_index] = arr[min_index], arr[i]
+        print(f"Selection Sort: {arr}")
 
 def main():
     sorter = SortingClass()  # create instance
@@ -42,6 +56,9 @@ def main():
         sorter.parsingInput()
         sorter.insertionSort()
         sorter.bubbleSort()
+        sorter.selectionSort()
+        
+        if 
 
 if __name__ == "__main__":
     main()
