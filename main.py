@@ -57,8 +57,6 @@ def main():
         sorter.insertionSort()
         sorter.bubbleSort()
         sorter.selectionSort()
-        
-        if 
 
 if __name__ == "__main__":
     main()
